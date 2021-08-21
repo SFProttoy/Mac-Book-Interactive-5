@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy MacBook-Pro</title>
+    <!-- External Tailwind cdn -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Internal CSS link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- main start -->
+    <main class="grid grid-cols-2 justify-items-center mt-14">
+      <section>
+        <img src="images/mac.png" alt="Mac" width="400" />
+      </section>
+      <section>
+        <h1 class="text-4xl font-bold mb-4">
+          Customize your Blue 24-inch iMac with Apple M1 chip.
+        </h1>
+        <p>
+          Apple M1 chip with 8-core CPU with 4 performance cores and 4
+          efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified
+          memory 256GB SSD.
+        </p>
+
+        <!-- Memory -->
+        <h5 class="mt-8 font-semibold mb-1">Memory</h5>
+        <button
+          id="8-um"
+          class="hover-btn border border-black p-1 rounded text-base"
+        >
+          8GB unified memory
+        </button>
+        <button
+          id="16-um"
+          class="hover-btn border border-black p-1 rounded text-base"
+        >
+          16GB unified memory
+        </button>
+
+        <!-- Storage -->
+        <h5 class="mt-8 font-semibold mb-1">Storage</h5>
+        <button
+          id="256-gb-ssd"
+          class="hover-btn border border-black p-1 rounded text-base"
+        >
+          256GB SSD storage
+        </button>
+        <button
+          id="512-gb-ssd"
+          class="hover-btn border border-black p-1 rounded text-base"
+        >
+          512GB SSD storage
+        </button>
+        <button
+          id="1-tb-ssd"
+          class="hover-btn border border-black p-1 rounded text-base"
+        >
+          1TB SSD storage
+        </button>
+
+        <!-- delivery option -->
+        <h5 class="mt-8 font-semibold mb-1">Choose your delivery option</h5>
+        <button
+          id="friday-25"
+          class="hover-btn border border-black p-1 rounded text-base"
+        >
+          Friday, Aug 25 FREE Prime Delivery
+        </button>
+        <button
+          id="friday-21"
+          class="hover-btn border border-black p-1 rounded text-base"
+        >
+          Friday, Aug 21 Delivery charge $20
+        </button>
+
+        <!-- Total Cost -->
+        <div class="mt-12 grid grid-cols-2" d>
+          <h6 class="font-semibold">Best Price</h6>
+          <h6 class="font-semibold">$<span id="best-price">1299</span></h6>
+        </div>
+        <div class="mt-12 grid grid-cols-2">
+          <h6 class="font-semibold">Extra Memory Cost</h6>
+          <h6 class="font-semibold">$<span id="memory-cost">0</span></h6>
+        </div>
+        <div class="mt-12 grid grid-cols-2">
+          <h6 class="font-semibold">Extra Storage Cost</h6>
+          <h6 class="font-semibold">$<span id="storage-cost">0</span></h6>
+        </div>
+        <div class="mt-12 grid grid-cols-2">
+          <h6 class="font-semibold">Delivery charge</h6>
+          <h6 class="font-semibold">$<span id="delivery-cost">0</span></h6>
+        </div>
+        <hr class="hr w-3/4 mt-4" />
+        <div class="mt-6 grid grid-cols-2 mb-4">
+          <h6 class="font-semibold">Total Price</h6>
+          <h6 class="font-semibold">$<span id="total-price">1299</span></h6>
+        </div>
+
+        <!-- Promo code -->
+        <h5 class="mb-1">Add Promo Code</h5>
+        <input
+          id="promo-input"
+          class="border border-red-500 rounded"
+          type="text"
+        />
+        <button
+          id="promo-button"
+          class="text-white border rounded bg-red-700 px-3"
+        >
+          Apply
+        </button>
+      </section>
+    </main>
+    <!-- main end -->
+
+    <footer>
+      <hr class="hr w-3/4 mt-4 mb-3 mx-auto" />
+      <div class="flex justify-center">
+        <p class="text-3xl mx-2">Total:</p>
+        <p class="text-3xl">$<span id="grand-total">1299</span></p>
+      </div>
+    </footer>
+
+    <!-- js link -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
