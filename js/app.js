@@ -57,6 +57,8 @@ document.getElementById("16-um").addEventListener("click", function () {
   const memoryCostNumber = parseInt(memoryCostText.innerText);
   if (memoryCostNumber == 0) {
     plus180("memory-cost");
+  } else {
+    calculateElseCost("memory-cost");
   }
 });
 
@@ -152,6 +154,8 @@ document.getElementById("friday-21").addEventListener("click", function () {
     deliveryCostText.innerText = deliveryCostNumber + 20;
     totalPriceText.innerText = totalPriceNumber + 20;
     grandTotalText.innerText = totalPriceNumber + 20;
+  } else {
+    calculateElseCost("memory-cost");
   }
 });
 
